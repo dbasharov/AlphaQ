@@ -1,0 +1,14 @@
+{
+  "name": "AlphaQ",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "less":"lessc ./less/main.less ./css/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^3.7.1"
+  }
+}
