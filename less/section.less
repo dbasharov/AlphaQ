@@ -1,8 +1,8 @@
 html, body {
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-family: 'Helvetica';
+  font-size: 16px;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: @background-color;
 }
 
 html {
@@ -10,44 +10,47 @@ html {
 }
 
 h1 {
-  font-size: 36px
+  font-size: 3rem
 }
 
 h2 {
-  font-size: 30px
+  font-size: 2.83rem
 }
 
 h3 {
-  font-size: 24px
+  font-size: 1.5rem
 }
 
 h4 {
-  font-size: 20px
+
 }
 
 h5 {
-  font-size: 18px
+
 }
 
 h6 {
-  font-size: 16px
+
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", "Open Sans", Arial, sans-serif;
+  font-family: @title-font;
   font-weight: 400;
   margin: 10px 0;
+}
+
+p{
+  font-family: @content-font;
+  font-size: 1.17rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.01em;
+
 }
 
 hr {
   border: 0;
   border-top: 1px solid #eee;
   margin: 20px 0;
-}
-
-.image {
-  max-width: 100%;
-  height: auto
 }
 
 img {
@@ -206,31 +209,9 @@ header [class*="col-"] {
 }
 
 header {
-  background-color: #fff;
-  color: #333;
-  padding: 10px 0 ;
-  border-bottom: 3px solid #ffa500;
-}
-
-
-.logo {
-  width: 160px;
-  height: auto;
-  float: left;
 
 }
 
-.logo a{
-  width: 160px;
-  height: auto;
-  display: block;
-}
-
-.logo a img{
-  width: 160px;
-  height: auto;
-  display: block;
-}
 
 .nav-header{
   float: right;
@@ -270,38 +251,14 @@ header {
 }
 
 
-.sticky{
-  position: fixed;
-  width: 100%;
-  top:0;
-  left: 0;
-  height: 100px;
-  transition: 0.3s;
-}
-
-
-.sticky .nav-header ul li a{
-  padding: 20px 0 10px;
-
-}
-
-
 
 .aside {
-  background-color: #33b5e5;
-  padding: 15px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 14px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
 }
 
 .footer {
-  background-color: #0099cc;
-  color: #ffffff;
-  text-align: center;
-  font-size: 12px;
-  padding: 15px;
+  background-color: @footer-bg-color;
+  color: @white;
 }
 
 
@@ -370,12 +327,3 @@ header {
 }
 
 /* END Parallax */
-
-h1.blur{
-  opacity: 0.8;
-  background-color: #eee;
-  padding: 0 20px;
-  line-height: 180px;
-  filter: blur(6px);
-
-}
