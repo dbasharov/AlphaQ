@@ -424,7 +424,6 @@ textarea {
 /* colors */
 html,
 body {
-  font-family: 'Helvetica';
   font-size: 16px;
   line-height: 1.5;
   background-color: #f6f3f3;
@@ -644,22 +643,18 @@ header [class*="col-"] {
   background: #ffffff;
 }
 .bg1::after {
-  background-image: url('../img/bg-1.jpg');
   background-position: center;
   background-size: cover;
 }
 .bg2::after {
-  background-image: url('../img/bg-2.jpg');
   background-position: center;
   background-size: cover;
 }
 .bg3::after {
-  background-image: url('../img/bg-3.jpg');
   background-position: center;
   background-size: cover;
 }
 .bg4::after {
-  background-image: url('../img/bg-4.jpg');
   background-position: center;
   background-size: cover;
 }
