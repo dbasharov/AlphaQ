@@ -1,56 +1,446 @@
-html, body {
-  font-size: 16px;
-  line-height: 1.5;
+
+header {
+  margin: 0;
+  padding: 27.57vw 0 0 0;
+  width: 100rem;
   background-color: @background-color;
+
+  .nav-header {
+    width: 100rem;
+    height: 4.561rem;
+    background: url("../img/header-bg.jpg") bottom center no-repeat;
+    background-size: contain;
+    box-sizing: border-box;
+    border-top: solid 0.05vw white;
+
+    ul {
+      width: 100rem;
+      height: 4.561rem;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        padding: 0.131rem 0 0 0;
+        margin: 0 0 0 0;
+        float: left;
+        display: block;
+
+        /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);*/
+
+        a {
+          height: 4.43rem;
+          font-family: @content-font;
+          font-weight: bold;
+          font-size: 1.17rem;
+          line-height: 3.96rem;
+          letter-spacing: 0.2em;
+          color: #ffffff;
+          padding: 0.47rem 0 0 1.51rem;
+          margin: 0;
+          display: block;
+          text-decoration: none;
+          text-align: left;
+          vertical-align: center;
+          box-sizing: border-box;
+        }
+
+        a.item-2:hover, a.item-3:hover, a.item-4:hover, a.item-5:hover {
+          background: rgba(255, 255, 255, 0.4);
+          transition: 0.3s;
+        }
+
+        .item-1 {
+          width: 11.11rem;
+        }
+
+        .item-2 {
+          width: 15.93rem;
+          background: rgba(255, 255, 255, 0.07);
+        }
+
+        .item-3 {
+          width: 19.78rem;
+          background: rgba(255, 255, 255, 0.25);
+        }
+
+        .item-4 {
+          width: 23.37rem;
+          background: rgba(255, 255, 255, 0.33);
+        }
+
+        .item-5 {
+          width: 15.1rem;
+          background: rgba(255, 255, 255, 0.22);
+        }
+
+        .item-6 {
+          width: 14.68rem;
+        }
+
+      }
+
+      .home {
+        background: url("../img/icon-home.svg") left 1.71rem top 1.579rem no-repeat;
+        background-size: 1.2rem 1.14rem;
+      }
+
+      .contuct-us {
+        background: url("../img/icon-envelop.svg") left 1.82rem top 1.579rem no-repeat;
+        background-size: 1.2rem 1.14rem;
+      }
+
+    }
+
+  }
+
 }
 
-html {
-  overflow-x: hidden
+.section {
+
+  &-di {
+    margin: 0;
+    padding: 3.85rem 6.27rem;
+    color: @grey;
+
+    ul {
+      list-style: none;
+      margin: 3.7rem 0 0;
+      li {
+        display: inline-block;
+        margin: 0 0.25rem 0 0;
+
+        a {
+          text-decoration: none;
+          font-weight: bold;
+        }
+      }
+    }
+
+  }
+
+  &-parallax-1{
+    width: 100%;
+    height: 35.63rem;
+    background: url("../img/sign-03.svg") right 22.52rem bottom 3.99rem no-repeat;
+    background-size: 15.39rem 11.97rem;
+
+  }
+
+  &-pos{
+    margin: 0;
+    padding: 3.85rem 5.13rem 0 5.7rem;
+    color: @grey;
+
+    .left-section{
+      width: 33.97rem;
+      float: left;
+      margin: 0;
+      padding: 0;
+
+      h2{
+        margin-bottom: 2.30rem;
+      }
+
+      h4{
+        margin: 1.4rem 0 0.6rem;
+      }
+
+      p{
+        //margin-top: 2.30rem;
+        line-height: 2.09rem;
+      }
+
+      a.button-more {
+
+      }
+
+    }
+
+    .right-section{
+      width: 51rem;
+      float: right;
+
+      img.pos-image{
+        max-width: 100%;
+        height: auto;
+        box-shadow: 0.3rem 0.45rem 3rem rgba(0, 0, 0, 0.10);
+        margin-top: 2.3rem;
+      }
+
+
+    }
+
+
+  }
+
+  &-parallax-2{
+    width: 100%;
+    height: 33.63rem;
+
+    background: url("../img/sign-04.svg") left 12.20rem top 8.26rem no-repeat, url("../img/sign-02.svg") right 8.55rem bottom no-repeat;
+    //background: url("../img/sign-04.svg") left 13.59rem top 8.26rem no-repeat, url("../img/sign-02.svg") right 8.55rem top 27.65rem no-repeat;
+
+    //background-size: 15.39rem 6.84rem, 5.55rem 5.7rem;
+    background-size: 20.00rem, 5.55rem;
+
+  }
+
+  &-iv{
+    margin: -7.4rem 0 0;
+    padding: 0 5.13rem 0 6.7rem;
+    color: @grey;
+
+    h2{
+      text-align: center;
+      margin-bottom: 10rem;
+      padding-left: 5rem;
+    }
+
+    .left-section{
+      width: 41.98rem;
+      float: left;
+      margin: 0;
+      padding: 0;
+
+      img{
+        max-width: 100%;
+        height: auto;
+        box-shadow: 0.3rem 0.45rem 3rem rgba(0, 0, 0, 0.10);
+      }
+
+
+    }
+
+    .right-section{
+      width: 38.5rem;
+      //width: 41.33rem;
+      float: right;
+
+      p{
+        line-height: 2.09rem;
+      }
+
+      ul {
+        list-style: none;
+        margin: 2.5rem 0 0;
+
+        li {
+          display: inline-block;
+          margin: 0 0.5rem 0 0;
+
+          a {
+            text-decoration: none;
+            font-weight: bold;
+          }
+        }
+      }
+
+      a.button-more {
+
+      }
+
+
+
+    }
+
+
+  }
+
+
+  &-we-help{
+    margin-top: 19.95rem;
+    padding: 0;
+    height: 45.61rem;
+
+  h2{
+    margin-left: 19.00rem;
+  }
+  }
+
+  &-online-training{
+    padding: 0 7.98rem 0;
+
+
+    h2{
+      margin: 0 0 9.97rem 2.23rem;
+    }
+
+    .left-section{
+      float: left;
+      width: 27.00rem;
+      //width: 23.95rem;
+      //border: solid 1px red;
+      //box-sizing: border-box;
+
+      p{
+        margin-top: 2.30rem;
+        line-height: 2.09rem;
+      }
+
+      ul {
+        list-style: none;
+        margin: 2.5rem 0 0;
+
+        li {
+          display: inline;
+          margin: 0 0.5rem 0 0;
+          line-height: 2.09rem;
+
+          a {
+            text-decoration: none;
+            font-weight: bold;
+          }
+        }
+      }
+
+    }
+
+    .right-section{
+
+      width: 55.01rem;
+      float: right;
+      margin: 0;
+      padding: 0;
+
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+
+    }
+  }
+
+  &-parallax-3{
+    width: 100%;
+    height: 51.31rem;
+    background: url("../img/sign-01.svg") right 16.81rem bottom no-repeat;
+    background-size: 4.90rem;
+
+  }
+
+  &-video-production{
+    margin-top: -18.8rem;
+    padding: 0 7.69rem 0;
+
+    h2, p, ul {
+      margin: 0 0 0 14.5rem;
+      //margin: 0 0 0 15.1rem;
+    }
+
+    p{
+      margin-top: 2.30rem;
+      line-height: 2.09rem;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 2.5rem;
+
+
+      li {
+        display: inline;
+        margin: 0 0.5rem 0 0;
+        line-height: 2.09rem;
+
+
+        a {
+          text-decoration: none;
+          font-weight: bold;
+        }
+
+
+      }
+    }
+
+    img{
+      width: 80.3rem;
+      height: auto;
+      margin-top: 5.98rem;
+    }
+
+  }
+
 }
 
-h1 {
-  font-size: 3rem
+
+footer {
+  height: 27.99rem;
+  margin-top: 20.52rem;
+  background-color: @footer-bg-color;
+  padding-top: 14rem;
+
+  .footer-wrapper{
+    display: grid;
+    grid-template-columns: 30rem 30rem;
+    border-bottom: solid 1px white;
+    width: 60rem;
+    margin: 0 0 0 18.01rem;
+    padding-bottom: 1.87rem;
+  }
+
+  p, a{
+    color: @white;
+    font-family: @title-font;
+    font-weight: normal;
+    font-size: 1.87rem;
+  }
+
+  p{
+    text-align: left;
+  }
+
+  a{
+    text-align: right;
+    text-decoration: none;
+  }
+
 }
 
-h2 {
-  font-size: 2.83rem
-}
-
-h3 {
-  font-size: 1.5rem
-}
-
-h4 {
-
-}
-
-h5 {
-
-}
-
-h6 {
-
-}
-
-h1, h2, h3, h4, h5, h6 {
+a.button-more {
   font-family: @title-font;
-  font-weight: 400;
-  margin: 10px 0;
+  font-size: 1.75rem;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  color: @button-color;
+  display: block;
+  width: 9.55rem;
+  line-height: 3.47rem;
+  border: solid 0.13rem @button-color;
+  box-sizing: border-box;
+  box-shadow: 0.3rem 0.45rem 3rem rgba(0, 0, 0, 0.10);
+  margin: 3.26rem 0 0;
 }
 
-p{
-  font-family: @content-font;
-  font-size: 1.17rem;
-  line-height: 1.5rem;
-  letter-spacing: 0.01em;
+.a-q-bg{
+  width: 100%;
+  position: fixed;
+  z-index: -2;
+  //top: 35.5rem;
+  top: 15.5rem;
+  left: 27rem;
 
+  img{
+    width: 44.67rem;
+    height: auto;
+    text-align: center;
+  }
 }
 
-hr {
-  border: 0;
-  border-top: 1px solid #eee;
-  margin: 20px 0;
+//
+
+
+//
+
+
+//
+
+.display-none {
+  display: none;
 }
+
+
 
 img {
   vertical-align: middle
@@ -58,11 +448,6 @@ img {
 
 a {
   color: inherit
-}
-
-.block {
-  display: block;
-  width: 100%
 }
 
 .responsive {
@@ -81,9 +466,7 @@ a {
   padding: 15px;
 }
 
-
 /* Responsive grid */
-
 
 /* For mobile phones: */
 [class*="col-"] {
@@ -197,69 +580,11 @@ a {
   margin: auto
 }
 
-
-
 /* END Responsive grid */
-
-
 
 header [class*="col-"] {
   padding: 0 20px;
 }
-
-header {
-
-}
-
-
-.nav-header{
-  float: right;
-  height: 60px;
-}
-
-.nav-header ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-header li {
-  line-height: 60px;
-  padding: 0;
-  margin: 0 0 0 10px;
-  color: #ffffff;
-  display: inline-block;
-  font-size: 13px;
-  /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);*/
-}
-
-.nav-header ul li a{
-  line-height: 40px;
-  padding: 0;
-  margin: 0;
-  color: #333;
-  display: inline-block;
-  text-decoration: none;
-  font-size: 13px;
-
-}
-
-.nav-header ul li a:hover, .nav-header ul li a.active{
-  border-bottom: solid 2px red;
-  transition: 0.3s;
-}
-
-
-
-.aside {
-
-}
-
-.footer {
-  background-color: @footer-bg-color;
-  color: @white;
-}
-
 
 /* START Parallax */
 
@@ -304,14 +629,11 @@ header {
 
 }
 
-
 .bg2::after {
   //background-image: url('../img/bg-2.jpg');
   background-position: center;
   background-size: cover;
 }
-
-
 
 .bg3::after {
   //background-image: url('../img/bg-3.jpg');
