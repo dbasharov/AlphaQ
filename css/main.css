@@ -449,7 +449,14 @@ textarea {
 }
 /* css Document */
 /* colors */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 html {
+  min-width: 100%;
+  min-height: 100%;
   overflow-x: hidden;
 }
 body {
@@ -466,6 +473,10 @@ h1 .wrap {
   height: 5rem;
   min-width: 3rem;
   border-right: solid 1px #f6f3f3;
+}
+h1.tipyng {
+  float: left;
+  margin-right: 1.1rem;
 }
 h2 {
   font-size: 4.25rem;
@@ -500,6 +511,25 @@ li {
   letter-spacing: 0.01em;
   font-weight: lighter;
   color: #545353;
+}
+nav div {
+  color: white;
+  font-size: 2rem;
+  line-height: 60px;
+  position: absolute;
+  top: 0;
+  left: 2%;
+  opacity: 0;
+  transition: 0.32s;
+}
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.visible-title {
+  opacity: 0.9;
+  transition: 0.8s;
 }
 header {
   margin: 0;
@@ -845,7 +875,17 @@ a.button-more {
   grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
 }
 .line-bg-wrapper div {
-  border-left: solid 1px #d3d1d1;
+  border-left: solid 1px #dfdfdf;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  transition: 0.32s;
+}
+.fixed {
+  position: fixed;
+  height: 20px;
+  transition: 0.25s;
 }
 .a-q-bg {
   width: 100%;

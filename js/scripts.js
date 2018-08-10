@@ -1,3 +1,6 @@
+
+
+
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -52,3 +55,57 @@ window.onload = function() {
     }
 
 };
+
+
+
+//
+//
+//
+
+
+
+
+$(document).ready(function(){
+    $(window).scroll(function(){
+        alert(1);
+    });
+});
+
+
+$(window).scroll(function(){
+    alert(1);
+});
+
+
+
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 50) {
+        $('nav').addClass('fixed-header');
+        $('nav div').addClass('visible-title');
+    }
+    else {
+        $('nav').removeClass('fixed-header');
+        $('nav div').removeClass('visible-title');
+    }
+});
+
+
+//
+//
+//
+
+var sticky = document.querySelector('.sticky');
+
+if (sticky.style.position !== 'sticky') {
+    var stickyTop = sticky.offsetTop;
+
+    alert(1);
+
+    document.addEventListener('scroll', function () {
+        window.scrollY >= stickyTop ?
+            sticky.classList.add('fixed') :
+            sticky.classList.remove('fixed');
+
+        alert(2);
+    });
+}
