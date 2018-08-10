@@ -493,6 +493,7 @@ li {
   line-height: 1.63rem;
   letter-spacing: 0.01em;
   font-weight: lighter;
+  color: #545353;
 }
 header {
   margin: 0;
@@ -576,8 +577,10 @@ header .nav-header ul .contuct-us {
   background-size: 1.2rem 1.14rem;
 }
 .section-di {
-  margin: 0;
-  padding: 3.85rem 6.27rem;
+  width: 60rem;
+  margin: 0 0 20rem;
+  padding: 3.85rem 0 7rem 6.27rem;
+  background: #f6f3f3;
   color: #545353;
 }
 .section-di ul {
@@ -594,9 +597,15 @@ header .nav-header ul .contuct-us {
 }
 .section-parallax-1 {
   width: 100%;
-  height: 35.63rem;
-  background: url("../img/sign-03.svg") right 22.52rem bottom 3.99rem no-repeat;
-  background-size: 15.39rem 11.97rem;
+  height: 12rem;
+  top: 16rem;
+}
+.section-parallax-1 img {
+  width: 15.39rem;
+  height: 11.97rem;
+  position: absolute;
+  right: 21.52rem;
+  bottom: 7rem;
 }
 .section-pos {
   margin: 0;
@@ -606,8 +615,9 @@ header .nav-header ul .contuct-us {
 .section-pos .left-section {
   width: 33.97rem;
   float: left;
-  margin: 0;
-  padding: 0;
+  margin: -5rem 0 0 0;
+  padding: 5rem 0 2rem;
+  background: #f6f3f3;
 }
 .section-pos .left-section h2 {
   margin-bottom: 2.3rem;
@@ -630,25 +640,29 @@ header .nav-header ul .contuct-us {
 }
 .section-parallax-2 {
   width: 100%;
-  height: 33.63rem;
+  height: 30rem;
+  top: 10rem;
   background: url("../img/sign-04.svg") left 12.2rem top 8.26rem no-repeat, url("../img/sign-02.svg") right 8.55rem bottom no-repeat;
   background-size: 20rem, 5.55rem;
 }
 .section-iv {
-  margin: -7.4rem 0 0;
+  margin: 0rem 0 0;
   padding: 0 5.13rem 0 6.7rem;
   color: #545353;
 }
 .section-iv h2 {
+  width: 28rem;
   text-align: center;
-  margin-bottom: 10rem;
-  padding-left: 5rem;
+  margin: 0 auto 10rem;
+  padding: 3rem 0;
+  background: #f6f3f3;
 }
 .section-iv .left-section {
   width: 41.98rem;
   float: left;
   margin: 0;
   padding: 0;
+  background-color: #f6f3f3;
 }
 .section-iv .left-section img {
   max-width: 100%;
@@ -658,6 +672,9 @@ header .nav-header ul .contuct-us {
 .section-iv .right-section {
   width: 38.5rem;
   float: right;
+  background: #f6f3f3;
+  padding: 2rem 0 5rem;
+  margin-top: -2rem;
 }
 .section-iv .right-section p {
   line-height: 2.09rem;
@@ -680,10 +697,14 @@ header .nav-header ul .contuct-us {
   height: 45.61rem;
 }
 .section-we-help h2 {
+  width: 36rem;
   margin-left: 19rem;
+  padding: 3rem 0;
+  background: #f6f3f3;
 }
 .section-online-training {
   padding: 0 7.98rem 0;
+  margin-bottom: 10rem;
 }
 .section-online-training h2 {
   margin: 0 0 9.97rem 2.23rem;
@@ -721,12 +742,14 @@ header .nav-header ul .contuct-us {
 }
 .section-parallax-3 {
   width: 100%;
-  height: 51.31rem;
+  height: 20rem;
+  top: 0rem;
+  z-index: -1;
   background: url("../img/sign-01.svg") right 16.81rem bottom no-repeat;
   background-size: 4.9rem;
 }
 .section-video-production {
-  margin-top: -18.8rem;
+  margin-top: -10rem;
   padding: 0 7.69rem 0;
 }
 .section-video-production h2,
@@ -799,6 +822,17 @@ a.button-more {
   box-shadow: 0.3rem 0.45rem 3rem rgba(0, 0, 0, 0.1);
   margin: 3.26rem 0 0;
 }
+.line-bg-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -3;
+  display: grid;
+  grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
+}
+.line-bg-wrapper div {
+  border-left: solid 1px #d3d1d1;
+}
 .a-q-bg {
   width: 100%;
   position: fixed;
@@ -811,164 +845,29 @@ a.button-more {
   height: auto;
   text-align: center;
 }
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+}
+.parallax__layer {
+  position: relative;
+}
+.parallax__layer--back {
+  transform: translateZ(-0.5px) scale(1.5);
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
 .display-none {
   display: none;
 }
 img {
   vertical-align: middle;
 }
-a {
-  color: inherit;
-}
-.responsive {
-  display: block;
-  overflow-x: auto;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-/* Responsive grid */
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {
-    width: 8.33%;
-  }
-  .col-s-2 {
-    width: 16.66%;
-  }
-  .col-s-3 {
-    width: 25%;
-  }
-  .col-s-4 {
-    width: 33.33%;
-  }
-  .col-s-5 {
-    width: 41.66%;
-  }
-  .col-s-6 {
-    width: 50%;
-  }
-  .col-s-7 {
-    width: 58.33%;
-  }
-  .col-s-8 {
-    width: 66.66%;
-  }
-  .col-s-9 {
-    width: 75%;
-  }
-  .col-s-10 {
-    width: 83.33%;
-  }
-  .col-s-11 {
-    width: 91.66%;
-  }
-  .col-s-12 {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {
-    width: 8.33%;
-  }
-  .col-2 {
-    width: 16.66%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-4 {
-    width: 33.33%;
-  }
-  .col-5 {
-    width: 41.66%;
-  }
-  .col-6 {
-    width: 50%;
-  }
-  .col-7 {
-    width: 58.33%;
-  }
-  .col-8 {
-    width: 66.66%;
-  }
-  .col-9 {
-    width: 75%;
-  }
-  .col-10 {
-    width: 83.33%;
-  }
-  .col-11 {
-    width: 91.66%;
-  }
-  .col-12 {
-    width: 100%;
-  }
-}
-.content-980 {
-  max-width: 980px;
-  margin: auto;
-}
-/* END Responsive grid */
-header [class*="col-"] {
-  padding: 0 20px;
-}
-/* START Parallax */
-.wrapper-parallax {
-  height: 80vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 2px;
-}
-.section {
-  position: relative;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  text-shadow: 0 0 5px #000;
-}
-.parallax::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: translateZ(-1px) scale(1.5);
-  background-size: 100%;
-  z-index: -1;
-}
-/* The styling for the static */
-.static {
-  background: #ffffff;
-}
-.bg1::after {
-  background-position: center;
-  background-size: cover;
-}
-.bg2::after {
-  background-position: center;
-  background-size: cover;
-}
-.bg3::after {
-  background-position: center;
-  background-size: cover;
-}
-.bg4::after {
-  background-position: center;
-  background-size: cover;
-}
-/* END Parallax */
