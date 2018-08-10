@@ -697,7 +697,7 @@ header .nav-header ul .contuct-us {
   height: 45.61rem;
 }
 .section-we-help h2 {
-  width: 36rem;
+  width: 34rem;
   margin-left: 19rem;
   padding: 3rem 0;
   background: #f6f3f3;
@@ -707,11 +707,15 @@ header .nav-header ul .contuct-us {
   margin-bottom: 10rem;
 }
 .section-online-training h2 {
-  margin: 0 0 9.97rem 2.23rem;
+  margin: 0 0 6.97rem 2.23rem;
+  padding: 3rem 0;
+  background: #f6f3f3;
 }
 .section-online-training .left-section {
   float: left;
   width: 27rem;
+  background: #f6f3f3;
+  padding-bottom: 3rem;
 }
 .section-online-training .left-section p {
   margin-top: 2.3rem;
@@ -752,6 +756,11 @@ header .nav-header ul .contuct-us {
   margin-top: -10rem;
   padding: 0 7.69rem 0;
 }
+.section-video-production .bg-wrapper {
+  width: 67rem;
+  background: #f6f3f3;
+  padding: 2rem 0 5.98rem 0;
+}
 .section-video-production h2,
 .section-video-production p,
 .section-video-production ul {
@@ -777,7 +786,6 @@ header .nav-header ul .contuct-us {
 .section-video-production img {
   width: 80.3rem;
   height: auto;
-  margin-top: 5.98rem;
 }
 footer {
   height: 27.99rem;
