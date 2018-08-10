@@ -99,13 +99,10 @@ var sticky = document.querySelector('.sticky');
 if (sticky.style.position !== 'sticky') {
     var stickyTop = sticky.offsetTop;
 
-    alert(1);
-
     document.addEventListener('scroll', function () {
         window.scrollY >= stickyTop ?
             sticky.classList.add('fixed') :
             sticky.classList.remove('fixed');
 
-        alert(2);
     });
 }
