@@ -64,7 +64,7 @@ window.onload = function() {
 
 
 
-
+/*
 $(document).ready(function(){
     $(window).scroll(function(){
         alert(1);
@@ -76,7 +76,9 @@ $(window).scroll(function(){
     alert(1);
 });
 
+*/
 
+/*
 
 $(window).scroll(function(){
     if ($(window).scrollTop() >= 50) {
@@ -89,20 +91,4 @@ $(window).scroll(function(){
     }
 });
 
-
-//
-//
-//
-
-var sticky = document.querySelector('.sticky');
-
-if (sticky.style.position !== 'sticky') {
-    var stickyTop = sticky.offsetTop;
-
-    document.addEventListener('scroll', function () {
-        window.scrollY >= stickyTop ?
-            sticky.classList.add('fixed') :
-            sticky.classList.remove('fixed');
-
-    });
-}
+*/
