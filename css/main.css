@@ -818,6 +818,7 @@ header .nav-header ul .contuct-us {
   z-index: -3;
   display: grid;
   grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
+  overflow-y: visible;
 }
 .section-we-help .title-wrapper .line-none-bg-wrapper div {
   border-left: solid 1px #f6f3f3;
