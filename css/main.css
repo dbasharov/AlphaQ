@@ -616,8 +616,26 @@ header .nav-header ul .contuct-us {
   width: 60rem;
   margin: 0 0 20rem;
   padding: 3.85rem 0 7rem 6.27rem;
-  background: #f6f3f3;
   color: #545353;
+}
+.section-di .line-none-bg-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -3;
+  display: grid;
+  grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
+}
+.section-di .line-none-bg-wrapper div {
+  border-left: solid 1px #f6f3f3;
+}
+.section-di .line-none-bg-wrapper .col-5 {
+  border-left: none;
+}
+.section-di .line-none-bg-wrapper .col-6 {
+  border-left: none;
 }
 .section-di ul {
   list-style: none;
@@ -648,12 +666,29 @@ header .nav-header ul .contuct-us {
   padding: 3.85rem 5.13rem 0 5.7rem;
   color: #545353;
 }
+.section-pos .line-none-bg-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -3;
+  display: grid;
+  grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
+}
+.section-pos .line-none-bg-wrapper div {
+  border-left: solid 1px #f6f3f3;
+}
+.section-pos .line-none-bg-wrapper .col-4,
+.section-pos .line-none-bg-wrapper .col-5,
+.section-pos .line-none-bg-wrapper .col-6 {
+  border-left: none;
+}
 .section-pos .left-section {
   width: 33.97rem;
   float: left;
   margin: -5rem 0 0 0;
   padding: 5rem 0 2rem;
-  background: #f6f3f3;
 }
 .section-pos .left-section h2 {
   margin-bottom: 2.3rem;
@@ -870,22 +905,12 @@ a.button-more {
   width: 100%;
   height: 100vh;
   position: fixed;
-  z-index: -3;
+  z-index: -4;
   display: grid;
   grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
 }
 .line-bg-wrapper div {
   border-left: solid 1px #dfdfdf;
-}
-.sticky {
-  position: sticky;
-  top: 0;
-  transition: 0.32s;
-}
-.fixed {
-  position: fixed;
-  height: 20px;
-  transition: 0.25s;
 }
 .a-q-bg {
   width: 100%;
@@ -924,4 +949,14 @@ a.button-more {
 }
 img {
   vertical-align: middle;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  transition: 0.32s;
+}
+.fixed {
+  position: fixed;
+  height: 20px;
+  transition: 0.25s;
 }
