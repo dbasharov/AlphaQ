@@ -617,10 +617,11 @@ header .nav-header ul .contuct-us {
   margin: 0 0 20rem;
   padding: 3.85rem 0 7rem 6.27rem;
   color: #545353;
+  position: relative;
 }
 .section-di .line-none-bg-wrapper {
   width: 100%;
-  height: 100%;
+  height: 30rem;
   position: absolute;
   left: 0;
   top: 0;
@@ -665,6 +666,7 @@ header .nav-header ul .contuct-us {
   margin: 0;
   padding: 3.85rem 5.13rem 0 5.7rem;
   color: #545353;
+  position: relative;
 }
 .section-pos .line-none-bg-wrapper {
   width: 100%;
@@ -713,20 +715,58 @@ header .nav-header ul .contuct-us {
   width: 100%;
   height: 30rem;
   top: 10rem;
-  background: url("../img/sign-04.svg") left 12.2rem top 8.26rem no-repeat, url("../img/sign-02.svg") right 8.55rem bottom no-repeat;
+  position: relative;
+  background: url("../img/sign-04.svg") left 12.2rem top 8.26rem no-repeat, url("../img/sign-02.svg") right 8.3rem bottom no-repeat;
   background-size: 20rem, 5.55rem;
 }
 .section-iv {
-  margin: 0rem 0 0;
+  margin: 0 0 0;
   padding: 0 5.13rem 0 6.7rem;
   color: #545353;
+  position: relative;
 }
-.section-iv h2 {
+.section-iv .line-none-bg-wrapper {
+  width: 100%;
+  height: 27rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -3;
+  display: grid;
+  grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
+}
+.section-iv .line-none-bg-wrapper div {
+  border-left: solid 1px #f6f3f3;
+}
+.section-iv .line-none-bg-wrapper .col-2,
+.section-iv .line-none-bg-wrapper .col-3,
+.section-iv .line-none-bg-wrapper .col-4 {
+  border-left: none;
+}
+.section-iv .title-wrapper .line-none-bg-wrapper {
+  width: 100%;
+  height: 12rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -2;
+  display: grid;
+  grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
+}
+.section-iv .title-wrapper .line-none-bg-wrapper div {
+  border-left: solid 1px #f6f3f3;
+}
+.section-iv .title-wrapper .line-none-bg-wrapper .col-2,
+.section-iv .title-wrapper .line-none-bg-wrapper .col-3,
+.section-iv .title-wrapper .line-none-bg-wrapper .col-5,
+.section-iv .title-wrapper .line-none-bg-wrapper .col-6 {
+  border: none;
+}
+.section-iv .title-wrapper h2 {
   width: 28rem;
   text-align: center;
   margin: 0 auto 10rem;
   padding: 3rem 0;
-  background: #f6f3f3;
 }
 .section-iv .left-section {
   width: 41.98rem;
@@ -742,17 +782,18 @@ header .nav-header ul .contuct-us {
 }
 .section-iv .right-section {
   width: 38.5rem;
-  float: right;
-  background: #f6f3f3;
   padding: 2rem 0 5rem;
   margin-top: -2rem;
+  float: right;
 }
 .section-iv .right-section p {
   line-height: 2.09rem;
+  background: linear-gradient(to left, rgba(246, 243, 243, 0.7) 25%, rgba(246, 243, 243, 0) 25%, rgba(246, 243, 243, 0) 30%);
 }
 .section-iv .right-section ul {
   list-style: none;
-  margin: 2.5rem 0 0;
+  padding: 2.5rem 0 0;
+  background: linear-gradient(to left, rgba(246, 243, 243, 0.7) 25%, rgba(246, 243, 243, 0) 25%, rgba(246, 243, 243, 0) 30%);
 }
 .section-iv .right-section ul li {
   display: inline-block;
@@ -766,26 +807,74 @@ header .nav-header ul .contuct-us {
   margin-top: 19.95rem;
   padding: 0;
   height: 45.61rem;
+  position: relative;
 }
-.section-we-help h2 {
+.section-we-help .title-wrapper .line-none-bg-wrapper {
+  width: 100%;
+  height: 12rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -3;
+  display: grid;
+  grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
+}
+.section-we-help .title-wrapper .line-none-bg-wrapper div {
+  border-left: solid 1px #f6f3f3;
+}
+.section-we-help .title-wrapper .line-none-bg-wrapper .col-2,
+.section-we-help .title-wrapper .line-none-bg-wrapper .col-5,
+.section-we-help .title-wrapper .line-none-bg-wrapper .col-6 {
+  border: none;
+}
+.section-we-help .title-wrapper h2 {
   width: 34rem;
   margin-left: 19rem;
   padding: 3rem 0;
-  background: #f6f3f3;
 }
 .section-online-training {
   padding: 0 7.98rem 0;
   margin-bottom: 10rem;
+  position: relative;
 }
-.section-online-training h2 {
+.section-online-training .line-none-bg-wrapper {
+  width: 100%;
+  height: 32rem;
+  position: absolute;
+  left: 0;
+  bottom: 4rem;
+  z-index: -3;
+  display: grid;
+  grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
+}
+.section-online-training .line-none-bg-wrapper div {
+  border-left: solid 1px #f6f3f3;
+}
+.section-online-training .line-none-bg-wrapper .col-4,
+.section-online-training .line-none-bg-wrapper .col-5,
+.section-online-training .line-none-bg-wrapper .col-6 {
+  border: none;
+}
+.section-online-training .title-wrapper .line-none-bg-wrapper {
+  width: 100%;
+  height: 12rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -2;
+  display: grid;
+  grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
+}
+.section-online-training .title-wrapper .line-none-bg-wrapper div {
+  border-left: solid 1px #f6f3f3;
+}
+.section-online-training .title-wrapper h2 {
   margin: 0 0 6.97rem 2.23rem;
   padding: 3rem 0;
-  background: #f6f3f3;
 }
 .section-online-training .left-section {
   float: left;
   width: 27rem;
-  background: #f6f3f3;
   padding-bottom: 3rem;
 }
 .section-online-training .left-section p {
@@ -818,7 +907,7 @@ header .nav-header ul .contuct-us {
 .section-parallax-3 {
   width: 100%;
   height: 20rem;
-  top: 0rem;
+  top: 0;
   z-index: -1;
   background: url("../img/sign-01.svg") right 16.81rem bottom no-repeat;
   background-size: 4.9rem;
@@ -826,10 +915,26 @@ header .nav-header ul .contuct-us {
 .section-video-production {
   margin-top: -10rem;
   padding: 0 7.69rem 0;
+  position: relative;
+}
+.section-video-production .line-none-bg-wrapper {
+  width: 100%;
+  height: 32rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -3;
+  display: grid;
+  grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
+}
+.section-video-production .line-none-bg-wrapper div {
+  border-left: solid 1px #f6f3f3;
+}
+.section-video-production .line-none-bg-wrapper .col-6 {
+  border: none;
 }
 .section-video-production .bg-wrapper {
   width: 67rem;
-  background: #f6f3f3;
   padding: 2rem 0 5.98rem 0;
 }
 .section-video-production h2,
