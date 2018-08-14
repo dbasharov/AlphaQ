@@ -2,93 +2,112 @@
 header {
   margin: 0;
   padding: 27.57vw 0 0 0;
-  width: 100rem;
+  width: 100%;
   background-color: @background-color;
 
-  .nav-header {
-    width: 100rem;
-    height: 4.561rem;
-    background: url("../img/header-bg.jpg") bottom center no-repeat;
-    background-size: contain;
-    box-sizing: border-box;
-    border-top: solid 0.05vw white;
+}
 
-    ul {
-      width: 100rem;
-      height: 4.561rem;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+.nav-header {
+  width: 100%;
+  height: 4.43vw;
+  //height: 4.561vw;  for top border
+  background: url("../img/header-bg.jpg") bottom center no-repeat;
+  background-size: contain;
+  //box-sizing: border-box;
+  //border-top: solid 0.05vw white;  for top border
 
-      li {
-        padding: 0.131rem 0 0 0;
-        margin: 0 0 0 0;
-        float: left;
+  ul {
+    width: 100%;
+    height: 4.43vw;
+    //height: 4.561vw; for top border
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      //padding: 0 0 0 0;
+      padding: 0.131vw 0 0 0;
+      margin: 0 0 0 0;
+      float: left;
+      display: block;
+      border: none;
+
+      a {
+        height: 4.43vw;
+        font-family: @content-font;
+        font-weight: bold;
+        font-size: 1.17rem;
+        line-height: 3.96vw;
+        letter-spacing: 0.2em;
+        color: #ffffff;
+        padding: 0.47vw 0 0 1.51vw;
+        margin: 0;
         display: block;
-        /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);*/
-
-        a {
-          height: 4.43rem;
-          font-family: @content-font;
-          font-weight: bold;
-          font-size: 1.17rem;
-          line-height: 3.96rem;
-          letter-spacing: 0.2em;
-          color: #ffffff;
-          padding: 0.47rem 0 0 1.51rem;
-          margin: 0;
-          display: block;
-          text-decoration: none;
-          text-align: left;
-          vertical-align: center;
-          box-sizing: border-box;
-        }
-
-        a.item-2:hover, a.item-3:hover, a.item-4:hover, a.item-5:hover {
-          background: rgba(255, 255, 255, 0.4);
-          transition: 0.3s;
-        }
-
-        .item-1 {
-          width: 11.11rem;
-        }
-
-        .item-2 {
-          width: 15.93rem;
-          background: rgba(255, 255, 255, 0.07);
-        }
-
-        .item-3 {
-          width: 19.78rem;
-          background: rgba(255, 255, 255, 0.25);
-        }
-
-        .item-4 {
-          width: 23.37rem;
-          background: rgba(255, 255, 255, 0.33);
-        }
-
-        .item-5 {
-          width: 15.1rem;
-          background: rgba(255, 255, 255, 0.22);
-        }
-
-        .item-6 {
-          width: 14.68rem;
-        }
-
+        text-decoration: none;
+        text-align: left;
+        vertical-align: center;
+        width: 100%;
       }
 
-      .home {
-        background: url("../img/icon-home.svg") left 1.71rem top 1.579rem no-repeat;
-        background-size: 1.2rem 1.14rem;
+    }
+
+    .item-1 {
+      width: 11.11%;
+      a {
+        background: url("../img/icon-home.svg") left 1.71vw top 1.579vw no-repeat;
+        background-size: 1.2vw 1.14vw;
+      }
+    }
+
+    .item-2 {
+      width: 15.93%;
+      a {
+
+        background: rgba(255, 255, 255, 0.07);
       }
 
-      .contuct-us {
-        background: url("../img/icon-envelop.svg") left 1.82rem top 1.579rem no-repeat;
-        background-size: 1.2rem 1.14rem;
+    }
+
+    .item-3 {
+      width: 19.78%;
+      a {
+
+        background: rgba(255, 255, 255, 0.25);
       }
 
+    }
+
+    .item-4 {
+      width: 23.37%;
+      a {
+
+        background: rgba(255, 255, 255, 0.33);
+      }
+
+    }
+
+    .item-5 {
+      width: 15.1%;
+
+      a {
+
+        background: rgba(255, 255, 255, 0.22);
+      }
+    }
+
+    .item-6 {
+      width: 14.68%;
+      //width: 14.68rem;
+
+      a {
+        background: url("../img/icon-envelop.svg") left 1.82vw top 1.579vw no-repeat;
+        background-size: 1.2vw 1.14vw;
+      }
+    }
+
+    .item-2 a:hover, .item-3 a:hover, .item-4 a:hover, .item-5 a:hover {
+      background: rgba(255, 255, 255, 0.4);
+      transition: 0.3s;
     }
 
   }
@@ -98,22 +117,23 @@ header {
 .section {
 
   &-di {
-    width: 60rem;
-    margin: 0 0 20rem;
-    padding: 3.85rem 0 7.00rem 6.27rem;
+    width: 100%;
+    margin: 0 0 20vw;
+    padding: 3.85vw 0 7.00vw 6.27vw;
     color: @grey;
     position: relative;
     //background: rgba(246, 243, 243, 1);
 
     .line-none-bg-wrapper {
       width: 100%;
-      height: 30rem;
+      height: 30vw;
       position: absolute;
       left: 0;
       top: 0;
       z-index: -3;
       display: grid;
-      grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
+      //grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
+      grid-template-columns: 11.11% 15.93% 19.78% 23.37% 15.1% 14.68%;
 
       div {
         //border-left: solid 1px red;
@@ -132,10 +152,10 @@ header {
 
     ul {
       list-style: none;
-      margin: 3.7rem 0 0;
+      margin: 3.7vw 0 0;
       li {
         display: inline-block;
-        margin: 0 0.25rem 0 0;
+        margin: 0 0.25vw 0 0;
 
         a {
           text-decoration: none;
@@ -148,38 +168,41 @@ header {
 
   &-parallax-1 {
     width: 100%;
-    height: 12rem;
-    top: 16rem;
+    height: 12vw;
+    top: 16vw;
     //top: 35.63rem;
     //background: url("../img/sign-03.svg") right 22.52rem bottom 3.99rem no-repeat;
     //background-size: 15.39rem 11.97rem;
 
     img {
-      width: 15.39rem;
-      height: 11.97rem;
+      width: 15.39vw;
+      height: 11.97vw;
       position: absolute;
-      right: 21.52rem;
+      right: 21.52vw;
       //right: 22.52rem;
-      bottom: 7rem;
+      bottom: 7vw;
     }
 
   }
 
   &-pos {
+    width: 100%;
     margin: 0;
-    padding: 3.85rem 5.13rem 0 5.7rem;
+    padding: 3.85vw 5.13vw 0 5.7vw;
     color: @grey;
     position: relative;
 
     .line-none-bg-wrapper {
       width: 100%;
-      height: 100%;
+      height: 56vw;
+      //height: 100%;
       position: absolute;
       left: 0;
       top: 0;
       z-index: -3;
       display: grid;
-      grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
+      grid-template-columns: 11.11% 15.93% 19.78% 23.37% 15.1% 14.68%;
+      //grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
 
       div {
         //border-left: solid 1px red;
@@ -193,18 +216,18 @@ header {
     }
 
     .left-section {
-      width: 33.97rem;
+      width: 33.97vw;
       float: left;
-      margin: -5rem 0 0 0;
-      padding: 5rem 0 2rem;
+      margin: -5vw 0 0 0;
+      padding: 5vw 0 2vw;
       //background: rgba(246, 243, 243, 1);
 
       h2 {
-        margin-bottom: 2.30rem;
+        margin-bottom: 2.30vw;
       }
 
       h4 {
-        margin: 1.4rem 0 0.6rem;
+        margin: 1.4vw 0 0.6vw;
       }
 
       p {
@@ -215,14 +238,14 @@ header {
     }
 
     .right-section {
-      width: 51rem;
+      width: 51vw;
       float: right;
 
       img.pos-image {
         max-width: 100%;
         height: auto;
         box-shadow: 0.3rem 0.45rem 3rem rgba(0, 0, 0, 0.10);
-        margin-top: 2.3rem;
+        margin-top: 2.3vw;
       }
 
     }
@@ -231,11 +254,11 @@ header {
 
   &-parallax-2 {
     width: 100%;
-    height: 30rem;
-    top: 10rem;
+    height: 30vw;
+    top: 10vw;
     position: relative;
-    background: url("../img/sign-04.svg") left 12.20rem top 8.26rem no-repeat, url("../img/sign-02.svg") right 8.30rem bottom no-repeat;
-    background-size: 20.00rem, 5.55rem;
+    background: url("../img/sign-04.svg") left 12.20vw top 8.26vw no-repeat, url("../img/sign-02.svg") right 8.30vw bottom no-repeat;
+    background-size: 20.00vw, 5.55vw;
 
     //height: 33.63rem;
     //background: url("../img/sign-04.svg") left 13.59rem top 8.26rem no-repeat, url("../img/sign-02.svg") right 8.55rem top 27.65rem no-repeat;
@@ -244,21 +267,23 @@ header {
   }
 
   &-iv {
+    width: 100%;
     margin: 0 0 0;
-    padding: 0 5.13rem 0 6.7rem;
+    padding: 0 5.13vw 0 6.7vw;
     color: @grey;
     position: relative;
     //margin: -7.4rem 0 0;
 
     .line-none-bg-wrapper {
       width: 100%;
-      height: 27rem;
+      height: 27vw;
       position: absolute;
       left: 0;
       bottom: 0;
       z-index: -3;
       display: grid;
-      grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
+      grid-template-columns: 11.11% 15.93% 19.78% 23.37% 15.1% 14.68%;
+      //grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
 
       div {
         //border-left: solid 1px red;
@@ -275,13 +300,14 @@ header {
 
       .line-none-bg-wrapper {
         width: 100%;
-        height: 12.00rem;
+        height: 12.00vw;
         position: absolute;
         left: 0;
         top: 0;
         z-index: -2;
         display: grid;
-        grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
+        grid-template-columns: 11.11% 15.93% 19.78% 23.37% 15.1% 14.68%;
+        //grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
 
         div {
           border-left: solid 1px @background-color;
@@ -294,10 +320,10 @@ header {
       }
 
       h2 {
-        width: 28rem;
+        width: 28vw;
         text-align: center;
-        margin: 0 auto 10rem;
-        padding: 3rem 0;
+        margin: 0 auto 10vw;
+        padding: 3vw 0;
         //background: rgba(246, 243, 243, 1);
 
       }
@@ -305,7 +331,7 @@ header {
     }
 
     .left-section {
-      width: 41.98rem;
+      width: 41.98vw;
       float: left;
       margin: 0;
       padding: 0;
@@ -320,9 +346,9 @@ header {
     }
 
     .right-section {
-      width: 38.5rem;
-      padding: 2rem 0 5rem;
-      margin-top: -2rem;
+      width: 38.5vw;
+      padding: 2vw 0 5vw;
+      margin-top: -2vw;
       float: right;
       //width: 41.33rem;
       //background: rgba(246, 243, 243, 1);
@@ -335,13 +361,13 @@ header {
 
       ul {
         list-style: none;
-        padding: 2.5rem 0 0;
+        padding: 2.5vw 0 0;
         //margin: 2.5rem 0 0;
         background: linear-gradient(to left, rgba(246, 243, 243, 0.70) 25%, rgba(246, 243, 243, 0) 25%, rgba(246, 243, 243, 0) 30%);
 
         li {
           display: inline-block;
-          margin: 0 0.5rem 0 0;
+          margin: 0 0.5vw 0 0;
 
           a {
             text-decoration: none;
@@ -355,22 +381,24 @@ header {
   }
 
   &-we-help {
-    margin-top: 19.95rem;
+    width: 100%;
+    margin-top: 19.95vw;
     padding: 0;
-    height: 45.61rem;
+    height: 45.61vw;
     position: relative;
 
     .title-wrapper {
 
       .line-none-bg-wrapper {
         width: 100%;
-        height: 12.00rem;
+        height: 12.00vw;
         position: absolute;
         left: 0;
         top: 0;
         z-index: -3;
         display: grid;
-        grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
+        grid-template-columns: 11.11% 15.93% 19.78% 23.37% 15.1% 14.68%;
+        //grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
         overflow-y: visible;
 
         div {
@@ -384,9 +412,9 @@ header {
       }
 
       h2 {
-        width: 34rem;
-        margin-left: 19.00rem;
-        padding: 3rem 0;
+        width: 34vw;
+        margin-left: 19.00vw;
+        padding: 3vw 0;
         //background: rgba(246, 243, 243, 1);
       }
 
@@ -395,19 +423,21 @@ header {
   }
 
   &-online-training {
-    padding: 0 7.98rem 0;
-    margin-bottom: 10rem;
+    width: 100%;
+    padding: 0 7.98vw 0;
+    margin-bottom: 10vw;
     position: relative;
 
     .line-none-bg-wrapper {
       width: 100%;
-      height: 32rem;
+      height: 32vw;
       position: absolute;
       left: 0;
-      bottom: 4rem;
+      bottom: 4vw;
       z-index: -3;
       display: grid;
-      grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
+      grid-template-columns: 11.11% 15.93% 19.78% 23.37% 15.1% 14.68%;
+      //grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
 
       div {
         //border-left: solid 1px red;
@@ -424,13 +454,14 @@ header {
 
       .line-none-bg-wrapper {
         width: 100%;
-        height: 12.00rem;
+        height: 12.00vw;
         position: absolute;
         left: 0;
         top: 0;
         z-index: -2;
         display: grid;
-        grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
+        grid-template-columns: 11.11% 15.93% 19.78% 23.37% 15.1% 14.68%;
+        //grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
 
         div {
           //border-left: solid 1px red;
@@ -444,8 +475,8 @@ header {
       }
 
       h2 {
-        margin: 0 0 6.97rem 2.23rem;
-        padding: 3rem 0;
+        margin: 0 0 6.97vw 2.23vw;
+        padding: 3vw 0;
         //background: rgba(246, 243, 243, 1);
 
       }
@@ -454,24 +485,24 @@ header {
 
     .left-section {
       float: left;
-      width: 27.00rem;
-      padding-bottom: 3rem;
+      width: 27.00vw;
+      padding-bottom: 3vw;
       //width: 23.95rem;
       //background: rgba(246, 243, 243, 1);
 
       p {
-        margin-top: 2.30rem;
+        margin-top: 2.30vw;
         line-height: 2.09rem;
       }
 
       ul {
         list-style: none;
-        margin: 2.5rem 0 0;
+        margin: 2.5vw 0 0;
 
         li {
           display: inline;
-          margin: 0 0.5rem 0 0;
-          line-height: 2.09rem;
+          margin: 0 0.5vw 0 0;
+          line-height: 2.09vw;
 
           a {
             text-decoration: none;
@@ -484,7 +515,7 @@ header {
 
     .right-section {
 
-      width: 55.01rem;
+      width: 55.01vw;
       float: right;
       margin: 0;
       padding: 0;
@@ -499,30 +530,32 @@ header {
 
   &-parallax-3 {
     width: 100%;
-    height: 20rem;
+    height: 20vw;
     top: 0;
     z-index: -1;
-    background: url("../img/sign-01.svg") right 16.81rem bottom no-repeat;
-    background-size: 4.90rem;
+    background: url("../img/sign-01.svg") right 16.81vw bottom no-repeat;
+    background-size: 4.90vw;
     //height: 51.31rem;
 
   }
 
   &-video-production {
-    margin-top: -10rem;
-    padding: 0 7.69rem 0;
+    width: 100%;
+    margin-top: -10vw;
+    padding: 0 7.69vw 0;
     position: relative;
     //margin-top: -18.8rem;
 
     .line-none-bg-wrapper {
       width: 100%;
-      height: 32rem;
+      height: 32vw;
       position: absolute;
       left: 0;
       top: 0;
       z-index: -3;
       display: grid;
-      grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
+      grid-template-columns: 11.11% 15.93% 19.78% 23.37% 15.1% 14.68%;
+      //grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
 
       div {
         border-left: solid 1px @background-color;
@@ -535,28 +568,28 @@ header {
     }
 
     .bg-wrapper {
-      width: 67rem;
-      padding: 2rem 0 5.98rem 0;
+      width: 67vw;
+      padding: 2vw 0 5.98vw 0;
       //background: rgba(246, 243, 243, 1);
     }
 
     h2, p, ul {
-      margin: 0 0 0 14.5rem;
+      margin: 0 0 0 14.5vw;
       //margin: 0 0 0 15.1rem;
     }
 
     p {
-      margin-top: 2.30rem;
+      margin-top: 2.30vw;
       line-height: 2.09rem;
     }
 
     ul {
       list-style: none;
-      margin-top: 2.5rem;
+      margin-top: 2.5vw;
 
       li {
         display: inline;
-        margin: 0 0.5rem 0 0;
+        margin: 0 0.5vw 0 0;
         line-height: 2.09rem;
 
         a {
@@ -568,7 +601,7 @@ header {
     }
 
     img {
-      width: 80.3rem;
+      width: 80.3vw;
       height: auto;
       //margin-top: 5.98rem;
     }
@@ -578,18 +611,18 @@ header {
 }
 
 footer {
-  height: 27.99rem;
-  margin-top: 20.52rem;
+  height: 27.99vw;
+  margin-top: 20.52vw;
   background-color: @footer-bg-color;
-  padding-top: 14rem;
+  padding-top: 14vw;
 
   .footer-wrapper {
     display: grid;
-    grid-template-columns: 30rem 30rem;
+    grid-template-columns: 30vw 30vw;
     border-bottom: solid 1px white;
-    width: 60rem;
-    margin: 0 0 0 18.01rem;
-    padding-bottom: 1.87rem;
+    width: 60vw;
+    margin: 0 0 0 18.01vw;
+    padding-bottom: 1.87vw;
   }
 
   p, a {
@@ -618,22 +651,24 @@ a.button-more {
   text-align: center;
   color: @button-color;
   display: block;
-  width: 9.55rem;
+  width: 9.55vw;
   line-height: 3.47rem;
-  border: solid 0.13rem @button-color;
+  border: solid 0.13vw @button-color;
   box-sizing: border-box;
   box-shadow: 0.3rem 0.45rem 3rem rgba(0, 0, 0, 0.10);
-  margin: 3.26rem 0 0;
+  margin: 3.26vw 0 0;
 }
 
 .line-bg-wrapper {
   width: 100%;
-  height: 100vh;
-  position: fixed;
-  z-index: -4;
-
+  min-height: 450vw;
+  //position: fixed;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -400;
   display: grid;
-  grid-template-columns: 11.11rem 15.93rem 19.78rem 23.37rem 15.1rem 14.68rem;
+  grid-template-columns: 11.11% 15.93% 19.78% 23.37% 15.1% 14.68%;
 
   div {
     border-left: solid 1px #dfdfdf;
@@ -646,13 +681,13 @@ a.button-more {
   position: fixed;
   z-index: -2;
   //top: 35.5rem;
-  top: 15.5rem;
-  left: 27rem;
+  top: 15.5vw;
+  left: 27vw;
 
   //color: #f4f0ef; a-q color
 
   img {
-    width: 44.67rem;
+    width: 44.67vw;
     height: auto;
     text-align: center;
   }
@@ -660,17 +695,13 @@ a.button-more {
 
 // START Parallax
 
+
 .parallax {
   perspective: 1px;
-  height: 100vh;
+  max-height: 100vh;
+  width: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-}
-
-.parallax__group {
-  position: relative;
-  height: 100vh;
-  -webkit-transform-style: preserve-3d;
 }
 
 .parallax__layer {
@@ -695,31 +726,20 @@ a.button-more {
 
 // END Parallax
 
+.container-1200 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+//
+//
 //
 
-.display-none {
-  display: none;
-}
-
-img {
-  vertical-align: middle
-}
-
 .sticky {
+display: block;
   position: sticky;
-  top: 0;
-  //width: 100%;
-  //height: 100px;
-  //padding: 1em 0;
-  //background: #34495e;
-  //color: white;
-  //text-align: center;
-  transition: .32s;
-}
-
-.fixed {
-  //font-size: 24px;
-  position: fixed;
-  height: 20px;
-  transition: .25s;
+  position: -webkit-sticky;
+  top: -0.2vw;
+  //top: 4.561vw;
+  z-index: 999;
 }
