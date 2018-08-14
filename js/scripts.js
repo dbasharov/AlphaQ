@@ -47,7 +47,7 @@ window.addEventListener('load', () => {
     const parallaxDiv = document.querySelector('.parallax');
     parallaxDiv.addEventListener('scroll', () => {
         console.log($(parallaxDiv).scrollTop());
-        if ($(parallaxDiv).scrollTop() >= 250) {
+        if ($(parallaxDiv).scrollTop() >= 0) {
             $('nav').addClass('sticky');
 
             // $('nav div').addClass('visible-title');
