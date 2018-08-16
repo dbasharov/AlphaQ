@@ -528,9 +528,26 @@ nav div {
 }
 header {
   margin: 0;
-  padding: 27.57vw 0 0 0;
+  height: 27.57vw;
   width: 100%;
   background-color: #f6f3f3;
+}
+header h3 {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 5%;
+  display: block;
+  text-align: center;
+}
+header h3 .more-2560 {
+  font-weight: bold;
+  color: red;
+  display: none;
+}
+header h3 .less-2560 {
+  font-weight: bold;
+  color: blue;
+  display: inline;
 }
 .nav-header {
   width: 100%;
@@ -1083,7 +1100,13 @@ a.button-more {
   html {
     font-size: 0.65vw;
   }
-}
-.line-bg-wrapper {
-  height: 430vw;
+  header h3 .more-2560 {
+    display: inline;
+  }
+  header h3 .less-2560 {
+    display: none;
+  }
+  .line-bg-wrapper {
+    height: 430vw;
+  }
 }
