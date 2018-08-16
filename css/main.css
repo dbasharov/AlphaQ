@@ -11,7 +11,6 @@ html {
   color: #222;
   line-height: 1.4;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 1vw;
   width: 100%;
   overflow-x: hidden;
 }
@@ -457,6 +456,7 @@ body {
 html {
   width: 100%;
   overflow-x: hidden;
+  font-size: 1vw;
 }
 body {
   background-color: #f6f3f3;
@@ -534,33 +534,35 @@ header {
 }
 .nav-header {
   width: 100%;
-  height: 4.43vw;
+  padding-bottom: 4.43%;
+  position: relative;
   background: url("../img/header-bg.jpg") bottom center no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .nav-header ul {
   width: 100%;
-  height: 4.43vw;
+  height: 100%;
+  position: absolute;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 .nav-header ul li {
-  padding: 0.131vw 0 0 0;
+  height: 100%;
   margin: 0 0 0 0;
   float: left;
   display: block;
   border: none;
 }
 .nav-header ul li a {
-  height: 4.43vw;
+  height: 100%;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 1.17rem;
   line-height: 3.96vw;
   letter-spacing: 0.2em;
   color: #ffffff;
-  padding: 0.47vw 0 0 1.51vw;
+  padding: 0.601vw 0 0 1.51vw;
   margin: 0;
   display: block;
   text-decoration: none;
@@ -1015,16 +1017,19 @@ a.button-more {
 }
 .line-bg-wrapper {
   width: 100%;
-  min-height: 450vw;
+  height: 450vw;
   position: absolute;
   left: 0;
   top: 0;
-  z-index: -400;
+  z-index: -10;
   display: grid;
   grid-template-columns: 11.11% 15.93% 19.78% 23.37% 15.1% 14.68%;
 }
 .line-bg-wrapper div {
   border-left: solid 1px #dfdfdf;
+}
+.line-bg-wrapper div:first-child {
+  border-left: none;
 }
 .a-q-bg {
   width: 100%;
@@ -1064,4 +1069,21 @@ a.button-more {
   position: -webkit-sticky;
   top: -0.2vw;
   z-index: 999;
+}
+/*
+@supports ((position:sticky) or (position:-webkit-sticky)){
+  .nav, .nav_fix{
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+*/
+@media (min-width: 2561px) {
+  html {
+    font-size: 0.65vw;
+  }
+}
+.line-bg-wrapper {
+  height: 430vw;
 }
