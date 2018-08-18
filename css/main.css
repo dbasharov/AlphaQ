@@ -578,7 +578,7 @@ header h3 .less-2560 {
   height: 100%;
   width: 100%;
   padding: 0.601vw 0 0 1.51vw;
-  padding-top: calc((64px - 1.17rem) / 3 * 2);
+  padding-top: calc((64px - 1.17rem) / 7 * 4);
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -597,7 +597,7 @@ header h3 .less-2560 {
 .nav-header ul .item-1 a {
   background: url("../img/icon-home.svg") left 1.71vw center no-repeat;
   background-size: 1.2rem 1.14rem;
-  background-position-y: calc((64px - 1.14rem) / 3 * 2);
+  background-position-y: calc((64px - 1.14rem) / 7 * 4);
 }
 .nav-header ul .item-2 {
   width: 15.93%;
@@ -629,7 +629,7 @@ header h3 .less-2560 {
 .nav-header ul .item-6 a {
   background: url("../img/icon-envelop.svg") left 1.82vw center no-repeat;
   background-size: 1.2rem 1.14rem;
-  background-position-y: calc((64px - 1.14rem) / 3 * 2);
+  background-position-y: calc((64px - 1.14rem) / 7 * 4);
 }
 .nav-header ul .item-2 a:hover,
 .nav-header ul .item-3 a:hover,
