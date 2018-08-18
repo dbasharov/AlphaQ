@@ -576,26 +576,28 @@ header h3 .less-2560 {
 }
 .nav-header ul li a {
   height: 100%;
+  width: 100%;
+  padding: 0.601vw 0 0 1.51vw;
+  padding-top: calc((64px - 1.17rem) / 3 * 2);
+  margin: 0;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 1.17rem;
-  line-height: 3.96vw;
+  line-height: 1.17rem;
   letter-spacing: 0.2em;
   color: #ffffff;
-  padding: 0.601vw 0 0 1.51vw;
-  margin: 0;
   display: block;
   text-decoration: none;
   text-align: left;
   vertical-align: center;
-  width: 100%;
 }
 .nav-header ul .item-1 {
   width: 11.11%;
 }
 .nav-header ul .item-1 a {
-  background: url("../img/icon-home.svg") left 1.71vw top 1.579vw no-repeat;
-  background-size: 1.2vw 1.14vw;
+  background: url("../img/icon-home.svg") left 1.71vw center no-repeat;
+  background-size: 1.2rem 1.14rem;
+  background-position-y: calc((64px - 1.14rem) / 3 * 2);
 }
 .nav-header ul .item-2 {
   width: 15.93%;
@@ -625,8 +627,9 @@ header h3 .less-2560 {
   width: 14.68%;
 }
 .nav-header ul .item-6 a {
-  background: url("../img/icon-envelop.svg") left 1.82vw top 1.579vw no-repeat;
-  background-size: 1.2vw 1.14vw;
+  background: url("../img/icon-envelop.svg") left 1.82vw center no-repeat;
+  background-size: 1.2rem 1.14rem;
+  background-position-y: calc((64px - 1.14rem) / 3 * 2);
 }
 .nav-header ul .item-2 a:hover,
 .nav-header ul .item-3 a:hover,
