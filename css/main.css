@@ -532,6 +532,8 @@ header {
   height: 27.57vw;
   width: 100%;
   background-color: #f6f3f3;
+  position: relative;
+  z-index: -3;
 }
 header h3 {
   width: 70%;
@@ -552,7 +554,7 @@ header h3 .less-2560 {
 }
 .nav-header {
   width: 100%;
-  padding-bottom: 4.43%;
+  padding-bottom: 64px;
   position: relative;
   background: url("../img/header-bg.jpg") bottom center no-repeat;
   background-size: cover;
