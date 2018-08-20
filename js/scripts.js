@@ -58,8 +58,13 @@ window.addEventListener('load', () => {
         }
 
 
+        // window.scrollBy(0, valueInVh * window.innerHeight/100);
 
-        if ($(parallaxDiv).scrollTop() <= 250 ) {
+
+        const valueInVh = 25;
+        const x = valueInVh * window.innerHeight/100;
+
+        if ($(parallaxDiv).scrollTop() <= x ) {
 
 
 
