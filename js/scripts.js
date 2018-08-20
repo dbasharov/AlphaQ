@@ -57,6 +57,35 @@ window.addEventListener('load', () => {
             // $('nav div').removeClass('visible-title');
         }
 
+
+
+        if ($(parallaxDiv).scrollTop() <= 250 ) {
+
+
+
+            const alphaQ = document.querySelector('.a-q-bg');
+            let scrollY = $(parallaxDiv).scrollTop();
+            let offsetY = alphaQ.offsetTop;
+            let y = scrollY;
+
+            // alert(scrollY);
+            // alert(offsetY);
+
+            alphaQ.style.top = y + "px";
+
+            // alphaQ.style.top = offsetY - 1 + "px";
+
+
+
+        }
+        else {
+
+
+        }
+
+
+
+
     });
 
     const elements = document.getElementsByClassName('typewrite');
