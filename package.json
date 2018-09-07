@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "less":"lessc ./less/main.less ./css/main.css"
+    "less": "lessc ./less/main.less ./css/main.css"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "less": "^3.7.1"
+    "less": "^3.8.1"
   }
 }
