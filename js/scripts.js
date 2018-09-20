@@ -103,7 +103,7 @@ window.addEventListener('load', () => {
 
 
 
-
+/*
     $(document).ready(function(){
         $(".nav-header").on("click","a", function (event) {
             event.preventDefault();
@@ -112,19 +112,20 @@ window.addEventListener('load', () => {
             $('.parallax').stop().animate({scrollTop: top}, 900);
         });
     });
+    */
 
 
 
 
-/*
+
 
     let linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
-        V = 0.2;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
+        V = 0.15;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
 
     for (let i = 0; i < linkNav.length; i++) {
         linkNav[i].addEventListener('click', function(e) { //по клику на ссылку
             e.preventDefault(); //отменяем стандартное поведение
-            const w = window.pageYOffset,  // производим прокрутку
+            const w = window.window.pageYOffset | document.querySelector('.parallax').scrollTop,  // производим прокрутку
                 hash = this.href.replace(/[^#]*(.*)/, '$1');  // к id элемента, к которому нужно перейти
             let t = document.querySelector(hash).getBoundingClientRect().top,  // отступ от окна браузера до id
                 start = null;
@@ -133,7 +134,7 @@ window.addEventListener('load', () => {
                 if (start === null) start = time;
                 let progress = time - start,
                     r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
-                window.scrollTo(0,r);
+                document.querySelector('.parallax').scrollTo(0,r);
                 if (r != w + t) {
                     requestAnimationFrame(step)
                 } else {
@@ -144,7 +145,7 @@ window.addEventListener('load', () => {
     };
 
 
-*/
+
 
 
 /*
