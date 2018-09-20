@@ -10,9 +10,9 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
 
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
     <script defer type="text/javascript" src="js/scripts.js"></script>
 
@@ -30,7 +30,7 @@
 
 <div class="parallax">
 
-    <div class="container-1440">
+    <!--<div class="container-1440">-->
 
         <div class="line-bg-wrapper">
             <div></div>
@@ -42,7 +42,7 @@
         </div>
 
 
-        <header>
+        <header id="header">
             <!--<h3>Just draft preview for 2560 px screen resolution more. <br> Changed font size only (approximately), without other all,
                 <br> for
                 font size behaviour demonstration.</h3>-->
@@ -52,14 +52,21 @@
         </header>
 
 
-        <nav class="nav-header" id="header">
+        <nav class="nav-header" id="">
             <ul>
-                <li class="item-1"><a class="home" href="#"></a></li>
-                <li class="item-2"><a class="scrollto" href="#pos">POS Apps</a></li>
-                <li class="item-3"><a class="scrollto" href="#videoProduction">Video Production</a></li>
-                <li class="item-4"><a class="scrollto" href="#digitalCommunications">Digital Communications</a></li>
+                <!--<li class="item-1"><a id="scrollmeHome" class="home"></a></li>-->
+                <!--<li class="item-2"><a class="" href="#pos">POS Apps</a></li>-->
+                <!--<li class="item-3"><a class="" href="#videoProduction">Video Production</a></li>-->
+                <!--<li class="item-4"><a class="" href="#digitalCommunications">Digital Communications</a></li>-->
+                <!--<li class="item-5"><a href="#content">Content</a></li>-->
+                <!--<li class="item-6"><a class="contuct-us" href="#contact-us-email"></a></li>-->
+
+                <li class="item-1"><a class="home" href="#header"></a></li>
+                <li class="item-2"><a class="" href="#pos">POS Apps</a></li>
+                <li class="item-3"><a class="" href="#videoProduction">Video Production</a></li>
+                <li class="item-4"><a class="" href="#digitalCommunications">Digital Communications</a></li>
                 <li class="item-5"><a href="#content">Content</a></li>
-                <li class="item-6"><a class="contuct-us" href="#"></a></li>
+                <li class="item-6"><a class="contuct-us" href="#contact-us-email"></a></li>
             </ul>
 
         </nav>
@@ -121,7 +128,7 @@
 
             <div class="left-section">
 
-                <a class="anchor" name="pos" href=""></a>
+                <a class="anchor" id="pos" name="pos" href=""></a>
 
                 <h2>Point of sale</h2>
 
@@ -187,7 +194,7 @@
                     <div class="col-6"></div>
                 </div>
 
-                <a class="anchor" name="videoProduction" href=""></a>
+                <a class="anchor" id="videoProduction" name="videoProduction" href=""></a>
 
                 <h2>Inspired video</h2>
 
@@ -273,7 +280,7 @@
                     <div class="col-6"></div>
                 </div>
 
-                <a class="anchor" name="digitalCommunications" href=""></a>
+                <a class="anchor" id="digitalCommunications" name="digitalCommunications" href=""></a>
 
                 <h2>Online training & communication platforms</h2>
             </div>
@@ -329,7 +336,7 @@
 
             <div class="bg-wrapper">
 
-                <a class="anchor" name="content" href=""></a>
+                <a class="anchor" id="content" name="content" href=""></a>
 
                 <h2>Video production</h2>
 
@@ -364,13 +371,13 @@
                         Alicja Milesi
                     </p>
 
-                    <a class="e-mail-link" href="#">alicja.milesi@alphaq.net</a>
+                    <a class="e-mail-link" href="#" id="contact-us-email" name="contact-us-email">alicja.milesi@alphaq.net</a>
                 </div>
             </div>
 
         </footer>
 
-    </div>
+    <!--</div>-->
 </div>
 
 
