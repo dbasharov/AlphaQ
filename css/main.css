@@ -512,12 +512,9 @@ li {
   font-weight: lighter;
   color: #545353;
 }
-html {
-  scroll-behavior: smooth;
-}
 header {
   margin: 0;
-  height: 27.57vw;
+  height: 26.0416vw;
   width: 100%;
   background-color: #f6f3f3;
   position: relative;
