@@ -120,7 +120,7 @@ window.addEventListener('load', () => {
 
 
     let linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
-        V = 0.15;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
+        V = 0.4;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
 
     for (let i = 0; i < linkNav.length; i++) {
         linkNav[i].addEventListener('click', function(e) { //по клику на ссылку
@@ -143,6 +143,7 @@ window.addEventListener('load', () => {
             }
         }, false);
     };
+
 
 
 
@@ -176,3 +177,4 @@ window.addEventListener('load', () => {
 });
 
 
+history.pushState('', document.title, window.location.pathname);
