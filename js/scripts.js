@@ -23,7 +23,6 @@ class TxtType {
         this.el.innerHTML = `<span class='wrap'>${this.txt}</span>`;
 
         let delta = 150 - Math.random() * 100;
-        // var delta = 200 - Math.random() * 100;
 
         if (this.isDeleting) {
             delta /= 2;
@@ -50,11 +49,10 @@ window.addEventListener('load', () => {
         if ($(parallaxDiv).scrollTop() >= 0) {
             $('nav').addClass('sticky');
 
-            // $('nav div').addClass('visible-title');
         }
         else {
             $('nav').removeClass('sticky');
-            // $('nav div').removeClass('visible-title');
+
         }
 
 
@@ -80,8 +78,6 @@ window.addEventListener('load', () => {
 
             // alphaQ.style.top = offsetY - 1 + "px";
 
-
-
         }
         else {
 
@@ -103,34 +99,18 @@ window.addEventListener('load', () => {
 
 
 
-/*
-    $(document).ready(function(){
-        $(".nav-header").on("click","a", function (event) {
-            event.preventDefault();
-            let id  = $(this).attr('href'),
-                top = $(id).offset().top;
-            $('.parallax').stop().animate({scrollTop: top}, 900);
-        });
-    });
-    */
-
-
-
-
-
-
-    let linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
-        V = 0.4;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
+    let linkNav = document.querySelectorAll('[href^="#"]'),
+        V = 0.4;  // scrolling speed
 
     for (let i = 0; i < linkNav.length; i++) {
-        linkNav[i].addEventListener('click', function(e) { //по клику на ссылку
-            e.preventDefault(); //отменяем стандартное поведение
-            let w = window.pageYOffset | document.querySelector('.parallax').scrollTop,  // производим прокрутку
-                hash = this.href.replace(/[^#]*(.*)/, '$1');  // к id элемента, к которому нужно перейти
+        linkNav[i].addEventListener('click', function(e) {
+            e.preventDefault();
+            let w = window.pageYOffset | document.querySelector('.parallax').scrollTop,
+                hash = this.href.replace(/[^#]*(.*)/, '$1');
             const offset = 0;
-            let t = document.querySelector(hash).getBoundingClientRect().top - offset,  // отступ от окна браузера до id
+            let t = document.querySelector(hash).getBoundingClientRect().top - offset,
                 start = null;
-            requestAnimationFrame(step);  // подробнее про функцию анимации [developer.mozilla.org]
+            requestAnimationFrame(step);  // for more about animate [developer.mozilla.org]
             function step(time) {
                 if (start === null) start = time;
                 let progress = time - start,
@@ -139,39 +119,11 @@ window.addEventListener('load', () => {
                 if (r != w + t) {
                     requestAnimationFrame(step)
                 } else {
-                    location.hash = hash  // URL с хэшем
+                    location.hash = hash
                 }
             }
         }, false);
     };
-
-
-
-
-
-
-/*
-
-    function runScroll() {
-        scrollTo(document.querySelector(".section-we-help"), 0, 900);
-    }
-    let scrollme;
-    scrollme = document.querySelector("#scrollmeHome");
-    scrollme.addEventListener("click",runScroll,false);
-
-    function scrollTo(element, to, duration) {
-        if (duration <= 0) return;
-        let difference = to - element.scrollTop;
-        let perTick = difference / duration * 10;
-
-        setTimeout(function() {
-            element.scrollTop = element.scrollTop + perTick;
-            if (element.scrollTop == to) return;
-            scrollTo(element, to, duration - 10);
-        }, 10);
-    }
-
-*/
 
 
 
