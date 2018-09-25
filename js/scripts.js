@@ -125,9 +125,10 @@ window.addEventListener('load', () => {
     for (let i = 0; i < linkNav.length; i++) {
         linkNav[i].addEventListener('click', function(e) { //по клику на ссылку
             e.preventDefault(); //отменяем стандартное поведение
-            const w = window.window.pageYOffset | document.querySelector('.parallax').scrollTop,  // производим прокрутку
+            let w = window.pageYOffset | document.querySelector('.parallax').scrollTop,  // производим прокрутку
                 hash = this.href.replace(/[^#]*(.*)/, '$1');  // к id элемента, к которому нужно перейти
-            let t = document.querySelector(hash).getBoundingClientRect().top,  // отступ от окна браузера до id
+            const offset = 0;
+            let t = document.querySelector(hash).getBoundingClientRect().top - offset,  // отступ от окна браузера до id
                 start = null;
             requestAnimationFrame(step);  // подробнее про функцию анимации [developer.mozilla.org]
             function step(time) {
