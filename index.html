@@ -30,13 +30,13 @@
 
     <!-- Line background -->
 
-    <div class="line-bg-wrapper">
+    <div class="line-bg-wrapper mobile">
         <div></div>
         <div></div>
         <div></div>
         <div></div>
-        <div></div>
-        <div></div>
+        <div class="mobile-off"></div>
+        <div class="mobile-off"></div>
     </div>
 
 
@@ -58,6 +58,7 @@
 
     <nav class="nav-header">
         <ul>
+            <!--<li class="item-hamburger"><a class="home" href="#header"></a></li>-->
             <li class="item-1"><a class="home" href="#header"></a></li>
             <li class="item-2"><a class="" href="#pos">POS Apps</a></li>
             <li class="item-3"><a class="" href="#videoProduction">Video Production</a></li>
@@ -65,6 +66,46 @@
             <li class="item-5"><a href="#inspiredVideo">Content</a></li>
             <li class="item-6"><a class="contuct-us" href="#contact-us-email"></a></li>
         </ul>
+
+    </nav>
+
+    <nav class="nav-header-mobile">
+        <!--<nav class="nav-mobile">-->
+
+        <input class="menu-btn" type="checkbox" id="menu-btn"/>
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+
+
+        <ul class="head-menu">
+
+            <li class="item-2"><a class="home" href="#header"></a></li>
+
+            <li class="item-3"><a class="contuct-us" href="#contact-us-email"></a></li>
+
+        </ul>
+
+        <ul class="menu">
+            <li class="item-m1"><a class="" href="#pos">POS Apps</a></li>
+            <li class="item-m2"><a class="" href="#videoProduction">Video Production</a></li>
+            <li class="item-m3"><a class="" href="#digitalCommunications">Digital Communications</a></li>
+            <li class="item-m4"><a href="#inspiredVideo">Content</a></li>
+        </ul>
+
+        <!--<ul>-->
+
+        <!--<li class="item-2"><a class="home" href="#header"></a></li>-->
+        <!--<li class="item-3"><a class="contuct-us" href="#contact-us-email"></a></li>-->
+
+        <!--</ul>-->
+
+        <!--<ul class="menu">-->
+        <!--<li class="item-1-1"><a class="" href="#pos">POS Apps</a></li>-->
+        <!--<li class="item-1-2"><a class="" href="#videoProduction">Video Production</a></li>-->
+        <!--<li class="item-1-3"><a class="" href="#digitalCommunications">Digital Communications</a></li>-->
+        <!--<li class="item-1-4"><a href="#inspiredVideo">Content</a></li>-->
+        <!--</ul>-->
+
 
     </nav>
 
@@ -133,30 +174,44 @@
             <h2>Point of Sale</h2>
 
 
-            <h4>App solutions</h4>
+            <div class="mobile-on">
+            <!-- For change video, just replace a vimeo ID for the video. Like: 291377582 -->
+
+            <div style="padding:64.75% 0 0 0;position:relative;">
+                <iframe src="https://player.vimeo.com/video/291377582?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=1"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+
+
+            </div>
+
+            <h4>App solutions <span></span></h4>
             <p>that drive consumer engagment with interactive<br/>
                 technology that sparkles, calls customer attention<br/>
                 and stimulates purchase.</p>
             <br/>
 
-            <h4>Facial recogniction</h4>
+            <h4>Facial recogniction<span></span></h4>
             <p>that enables delivery of gender and age<br/>
                 targetted measures.</p>
             <br/>
 
-            <h4>Synchronized messaging</h4>
+            <h4>Synchronized messaging<span></span></h4>
             <p>across independent iPads, for group<br/>
                 and individual engagement.</p>
             <br/>
 
             <p>Create point of sale excitment that you<br/>
                 <strong>track and measure!</strong>
+                <span></span>
             </p>
 
 
         </div>
 
-        <div class="right-section">
+        <div class="right-section mobile-off">
 
             <!-- For change video, just replace a vimeo ID for the video. Like: 291377582 -->
 
@@ -233,11 +288,11 @@
 
 
                 <ul>
-                    <li><a href="#">Video concepts</a></li>
-                    <li>|</li>
-                    <li><a href="#">Editing</a></li>
-                    <li>|</li>
-                    <li><a href="#">Distribution</a></li>
+                    <li><a href="#">Video concepts</a><span></span></li>
+                    <li class="mobile-off">|</li>
+                    <li><a href="#">Editing</a><span></span></li>
+                    <li class="mobile-off">|</li>
+                    <li><a href="#">Distribution</a><span></span></li>
                 </ul>
 
                 <!--<a class="button-more" href="#">More</a>-->
@@ -305,6 +360,11 @@
             <h2>Online training & communication platforms</h2>
         </div>
 
+        <div class="mobile-on">
+
+            <img class="" src="img/online-training.png" alt="Online training & communication platforms"/>
+
+        </div>
 
         <div class="left-section">
             <p>
@@ -313,22 +373,22 @@
             </p>
 
             <ul>
-                <li><a href="#">Video courses</a></li>
-                <li>|</li>
-                <li><a href="#">E-learning</a></li>
-                <li>|</li>
-                <li><a href="#">Testing</a></li>
-                <li>|</li>
-                <li><a href="#">Course progress tracking</a></li>
-                <li>|</li>
-                <li><a href="#">Multiple languages content.</a></li>
+                <li><a href="#">Video courses</a><span></span></li>
+                <li class="mobile-off">|</li>
+                <li><a href="#">E-learning</a><span></span></li>
+                <li class="mobile-off">|</li>
+                <li><a href="#">Testing</a><span></span></li>
+                <li class="mobile-off">|</li>
+                <li><a href="#">Course progress tracking</a><span></span></li>
+                <li class="mobile-off">|</li>
+                <li><a href="#">Multiple languages content.</a><span></span></li>
             </ul>
 
             <!--<a class="button-more" href="#">More</a>-->
 
         </div>
 
-        <div class="right-section">
+        <div class="right-section mobile-off">
 
             <img class="" src="img/online-training.png" alt="Online training & communication platforms"/>
 
@@ -362,23 +422,37 @@
 
             <h2>Video production</h2>
 
+            <div class="video-production-video-container mobile-on">
+
+                <!-- For change video, just replace a vimeo ID for the video. Like: 291375863 -->
+
+                <div style="padding:56.25% 0 0 0;position:relative;">
+                    <iframe src="https://player.vimeo.com/video/291500915?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=1"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                            webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+
+
+            </div>
+
             <p>
                 Discover why video is the best medium of communication,<br/> and has an advantage over text and images.
             </p>
 
             <ul>
-                <li><a href="#">Video presentations</a></li>
-                <li>|</li>
-                <li><a href="#">Social media video posts</a></li>
-                <li>|</li>
-                <li><a href="#">Training<br/> videos</a></li>
-                <li>|</li>
-                <li><a href="#">Video channels.</a></li>
+                <li><a href="#">Video presentations</a><span></span></li>
+                <li class="mobile-off">|</li>
+                <li><a href="#">Social media video posts</a><span></span></li>
+                <li class="mobile-off">|</li>
+                <li><a href="#">Training<br/> videos</a><span></span></li>
+                <li class="mobile-off">|</li>
+                <li><a href="#">Video channels.</a><span></span></li>
             </ul>
 
         </div>
 
-        <div class="video-production-video-container">
+        <div class="video-production-video-container mobile-off">
 
             <!-- For change video, just replace a vimeo ID for the video. Like: 291375863 -->
 
