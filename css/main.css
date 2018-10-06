@@ -529,7 +529,7 @@ header {
   height: 26.034vw;
   background-color: #f6f3f3;
   position: relative;
-  z-index: -3;
+  z-index: 9999;
 }
 header h3 {
   width: 70%;
@@ -1253,15 +1253,14 @@ a.button-more {
     background: url("../img/hamburger-bg.jpg") center top no-repeat;
     position: sticky;
     width: 100%;
-    z-index: 30;
+    z-index: 999;
     display: block;
     background-size: cover;
   }
   .nav-header-mobile ul.head-menu {
     width: 66.66%;
     height: 100%;
-    position: absolute;
-    right: 0;
+    float: right;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -1313,6 +1312,7 @@ a.button-more {
   }
   .nav-header-mobile ul.menu {
     position: relative;
+    z-index: 9999;
     width: 100%;
     margin: 0;
     padding: 0;
