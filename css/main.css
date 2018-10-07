@@ -1224,7 +1224,7 @@ a.button-more {
   }
   .line-bg-wrapper {
     width: 100%;
-    height: 1150vw;
+    height: 1280vw;
     position: absolute;
     left: 0;
     top: 0;
@@ -1237,6 +1237,59 @@ a.button-more {
   }
   .line-bg-wrapper div:first-child {
     border-left: none;
+  }
+  .line-none-bg-wrapper-di,
+  .line-none-bg-wrapper-pos,
+  .line-none-bg-wrapper-iv,
+  .line-none-bg-wrapper-we-help,
+  .line-none-bg-wrapper-training,
+  .line-none-bg-wrapper-video-production {
+    display: grid;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -3;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  .line-none-bg-wrapper-di div,
+  .line-none-bg-wrapper-pos div,
+  .line-none-bg-wrapper-iv div,
+  .line-none-bg-wrapper-we-help div,
+  .line-none-bg-wrapper-training div,
+  .line-none-bg-wrapper-video-production div {
+    border-left: solid 1px #f6f3f3;
+  }
+  .line-none-bg-wrapper-di .col-1,
+  .line-none-bg-wrapper-pos .col-1,
+  .line-none-bg-wrapper-iv .col-1,
+  .line-none-bg-wrapper-we-help .col-1,
+  .line-none-bg-wrapper-training .col-1,
+  .line-none-bg-wrapper-video-production .col-1 {
+    border-left: none;
+  }
+  .line-none-bg-wrapper-di {
+    height: 90vw;
+    top: 42vw;
+  }
+  .line-none-bg-wrapper-pos {
+    height: 240vw;
+    top: 163vw;
+  }
+  .line-none-bg-wrapper-iv {
+    height: 155vw;
+    top: 495vw;
+  }
+  .line-none-bg-wrapper-we-help {
+    height: 20vw;
+    top: 668vw;
+  }
+  .line-none-bg-wrapper-training {
+    height: 230vw;
+    top: 745vw;
+  }
+  .line-none-bg-wrapper-video-production {
+    height: 160vw;
+    top: 1055vw;
   }
   .col-5,
   .col-6 {
@@ -1421,6 +1474,7 @@ a.button-more {
     padding: 12vw 5vw 7vw;
   }
   .section-di .line-none-bg-wrapper {
+    display: none;
     height: 70vw;
     position: absolute;
     top: 0;
@@ -1461,18 +1515,23 @@ a.button-more {
     width: 100%;
     height: 12vw;
     top: 16vw;
+    z-index: -1;
+    position: relative;
   }
   .section-parallax-1 img {
     width: 23.14vw;
     height: 18vw;
     position: absolute;
-    right: 25vw;
-    bottom: 5vw;
+    right: 21.52vw;
+    bottom: 7vw;
   }
   .section-pos {
     padding: 0 5vw;
+    position: relative;
+    z-index: 1;
   }
   .section-pos .line-none-bg-wrapper {
+    display: none;
     height: 230vw;
     grid-template-columns: 25% 25% 25% 25%;
   }
@@ -1542,16 +1601,17 @@ a.button-more {
   }
   .section-parallax-2 {
     width: 100%;
-    height: 30vw;
+    height: 80vw;
     top: 10vw;
     position: relative;
-    background: url("../img/sign-04.svg") left 12.2vw top 8.26vw no-repeat, url("../img/sign-02.svg") right 8.3vw bottom no-repeat;
-    background-size: 20vw, 5.55vw;
+    background: url("../img/sign-04.svg") left 20vw top 8.26vw no-repeat, url("../img/sign-02.svg") right 35vw bottom no-repeat;
+    background-size: 45vw, 10vw;
   }
   .section-iv {
     padding: 0 5vw;
   }
   .section-iv .line-none-bg-wrapper {
+    display: none;
     height: 155vw;
     grid-template-columns: 25% 25% 25% 25%;
   }
@@ -1616,6 +1676,7 @@ a.button-more {
     display: none;
   }
   .section-we-help .title-wrapper .line-none-bg-wrapper {
+    display: none;
     height: 20vw;
     grid-template-columns: 25% 25% 25% 25%;
   }
@@ -1633,10 +1694,19 @@ a.button-more {
     padding: 3vw 5vw;
     border-bottom: none;
   }
+  .section-parallax-4 {
+    width: 100%;
+    height: 20vw;
+    top: 0;
+    z-index: -1;
+    background: url("../img/sign-05.svg") left 14vw bottom no-repeat;
+    background-size: 15vw;
+  }
   .section-online-training {
     padding: 0 5vw;
   }
   .section-online-training .line-none-bg-wrapper {
+    display: none;
     height: 230vw;
     bottom: 0vw;
     grid-template-columns: 25% 25% 25% 25%;
@@ -1705,11 +1775,11 @@ a.button-more {
   }
   .section-parallax-3 {
     width: 100%;
-    height: 20vw;
+    height: 60vw;
     top: 0;
     z-index: -1;
-    background: url("../img/sign-01.svg") right 16.81vw bottom no-repeat;
-    background-size: 4.9vw;
+    background: url("../img/sign-06.svg") left 34vw bottom no-repeat;
+    background-size: 32vw;
   }
   .section-video-production {
     width: 100%;
@@ -1721,6 +1791,7 @@ a.button-more {
     display: block;
   }
   .section-video-production .line-none-bg-wrapper {
+    display: none;
     height: 155vw;
     position: absolute;
     top: 20vw;
@@ -1789,6 +1860,14 @@ a.button-more {
   .section-video-production .video-production-video-container iframe {
     width: 100%;
     height: 100%;
+  }
+  .section-parallax-5 {
+    width: 100%;
+    height: 30vw;
+    top: 10vw;
+    z-index: -1;
+    background: url("../img/sign-07.svg") left 32vw bottom no-repeat;
+    background-size: 28vw;
   }
   footer {
     height: 70vw;
