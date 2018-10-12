@@ -45,15 +45,24 @@ class TxtType {
 window.addEventListener('load', () => {
     const parallaxDiv = document.querySelector('.parallax');
     parallaxDiv.addEventListener('scroll', () => {
-        console.log($(parallaxDiv).scrollTop());
-        if ($(parallaxDiv).scrollTop() >= 0) {
-            $('nav').addClass('sticky');
 
-        }
-        else {
-            $('nav').removeClass('sticky');
+        // console.log($(parallaxDiv).scrollTop());
 
-        }
+        // NAV sticky start
+
+        // if ($(parallaxDiv).scrollTop() >= 0) {
+        //     $('nav').addClass('sticky');
+
+        // }
+        // else {
+        //     $('nav').removeClass('sticky');
+        //
+        // }
+
+
+        // NAV sticky end
+
+
 
 
         // window.scrollBy(0, valueInVh * window.innerHeight/100);
