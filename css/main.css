@@ -1227,6 +1227,7 @@ a.button-more {
   }
   iframe {
     overflow: hidden;
+    pointer-events: none;
   }
   .line-bg-wrapper {
     width: 100%;
