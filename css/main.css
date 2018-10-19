@@ -548,6 +548,9 @@ header h3 .less-2560 {
   color: blue;
   display: inline;
 }
+header .video-box {
+  padding: 26.04% 0 0 0;
+}
 nav.nav-header-mobile {
   display: none;
 }
@@ -730,15 +733,17 @@ nav.nav-header-mobile {
 .section-pos .left-section h4 {
   margin: 1.4vw 0 0.6vw;
 }
+.section-pos .left-section .video-box {
+  padding: 64.75% 0 0 0;
+}
 .section-pos .right-section {
   width: 47vw;
   height: 33.09vw;
   margin-top: 2.3vw;
   float: left;
 }
-.section-pos .right-section iframe {
-  width: 100%;
-  height: 100%;
+.section-pos .right-section .video-box {
+  padding: 64.75% 0 0 0;
 }
 .section-pos .right-section img.pos-image {
   max-width: 100%;
@@ -808,6 +813,9 @@ nav.nav-header-mobile {
   float: none;
   margin: 0 auto;
   padding: 0;
+}
+.section-iv .left-section .video-box {
+  padding: 46.88% 0 0 0;
 }
 .section-iv .left-section iframe {
   width: 100%;
@@ -1000,9 +1008,8 @@ nav.nav-header-mobile {
   height: 28.114vw;
   margin: 0 auto;
 }
-.section-video-production .video-production-video-container iframe {
-  width: 100%;
-  height: 100%;
+.section-video-production .video-production-video-container .video-box {
+  padding: 56.25% 0 0 0;
 }
 .section-video-production img {
   width: 80.3vw;
@@ -1111,6 +1118,16 @@ a.button-more {
 }
 
 */
+.video-box {
+  position: relative;
+}
+.video-box iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .anchor {
   padding: 50px 0 0 0;
   text-decoration: none;
