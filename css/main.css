@@ -1094,7 +1094,6 @@ a.button-more {
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  background: red;
 }
 .parallax__layer {
   position: relative;
@@ -1236,10 +1235,6 @@ a.button-more {
 @media only screen and (max-width: 750px) {
   html {
     font-size: 4.2vw;
-    -webkit-overflow-scrolling: touch;
-  }
-  body {
-    -webkit-overflow-scrolling: touch;
   }
   .parallax {
     -webkit-overflow-scrolling: touch;
