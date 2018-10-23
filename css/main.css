@@ -1237,7 +1237,6 @@ a.button-more {
   }
   .parallax {
     -webkit-overflow-scrolling: touch;
-    background: cyan;
   }
   h2 {
     font-size: 2.6rem;
